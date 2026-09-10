@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LOOKCHAN</title>
+
+        <style>
+            body {
+                background-image: url('background.png');
+                font-family: Arial, sans-serif;
+            }
+            h1 {
+                color: #000000;
+            }
+            img {
+                margin: 20px;
+                transition: transform 0.2s; /* Smooth transition*/
+            }
+            .bookimg{
+                width :250px;
+                height :250px;
+                margin-left:center;
+                margin-right:center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="text-align: center;">Hello welcome to my BOOKSHELF</h1>
+        <a href="ABOUTME.html"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="aboutme.png" alt="about me" class="bookimg" id="abtme"></a>
+        <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="hobbies.png" alt="hobbies" class="bookimg" id="hobb" >
+        <img onmouseover="bigImg(this)" onmouseout="normalImg(this)"  src="random.png" alt="random" class="bookimg" id="rand" >
+    
+    <script>
+        function bigImg(x) {
+            x.style.height = "280px";
+            x.style.width = "280px";
+        }
+
+        function normalImg(x) {
+            x.style.height = "250px";
+            x.style.width = "250px";
+        }
+    </script>
+
+    </body>
+</html>
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
